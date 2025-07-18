@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://grine-mohammed-portfolio.web.app/sitemap.xml 
