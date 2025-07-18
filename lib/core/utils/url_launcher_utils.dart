@@ -13,7 +13,9 @@ class UrlLauncherUtils {
   }
 
   static void launchLinkedIn() async {
-    await launchUrl(Uri.parse("https://www.linkedin.com/in/grine-mohammed-205b01238/"));
+    await launchUrl(
+      Uri.parse("https://www.linkedin.com/in/grine-mohammed-205b01238/"),
+    );
   }
 
   static void launchGitHub() async {
@@ -22,14 +24,15 @@ class UrlLauncherUtils {
 
   static void downloadEnglishCV() {
     // For Flutter web: trigger direct download
-    final url = 'assets/cv/GRINE_Mohammed_CV_en.pdf';
+    final url = 'assets/assets/cv/GRINE_Mohammed_CV_en.pdf';
     final anchor = html.AnchorElement(href: url)
       ..setAttribute('download', 'GRINE_Mohammed_CV_en.pdf')
       ..click();
   }
+
   static void downloadFrenchCV() {
     // For Flutter web: trigger direct download
-    final url = 'assets/cv/GRINE_Mohammed_CV_fr.pdf';
+    final url = 'assets/assets/cv/GRINE_Mohammed_CV_fr.pdf';
     final anchor = html.AnchorElement(href: url)
       ..setAttribute('download', 'GRINE_Mohammed_CV_fr.pdf')
       ..click();
@@ -38,7 +41,7 @@ class UrlLauncherUtils {
   static void viewCV() async {
     // Open CV in new tab for viewing
     await launchUrl(
-      Uri.parse('assets/cv/GRINE_Mohammed_CV_en.pdf'),
+      Uri.parse('assets/assets/cv/GRINE_Mohammed_CV_en.pdf'),
       mode: LaunchMode.externalApplication,
     );
   }
